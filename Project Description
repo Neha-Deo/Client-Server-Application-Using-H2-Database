@@ -1,0 +1,35 @@
+Project Title: 
+Local Database Access Using H2 for Offline Development.
+
+Objective:
+The goal of this project is to develop a lightweight application that uses the H2 database 
+to provide local access to data without the need for connection to a production or remote database. 
+This approach allows developers to simulate interactions with a database in a local environment, 
+making it ideal for development, testing, and proof-of-concept stages without incurring the 
+overhead of setting up or accessing a live database.
+
+Key Features:
+
+1. H2 Database Integration:
+The application will use the H2 database in-memory mode, allowing local access to a relational database without needing a remote or production database. 
+It will support a variety of SQL operations in a lightweight, fast, and embedded environment.
+
+2. CRUD Functionality:
+The application will provide Create, Read, Update, and Delete (CRUD) operations, allowing full interaction with the local H2 database. 
+This will simulate typical interactions with a relational database.
+
+3. Schema Initialization:
+On startup, the application will automatically create and initialize the H2 database with a predefined schema, allowing users to start using the database right away.
+For DB Structure creation: schema.sql
+For Data insertion: data.sql
+
+4. In-Memory Mode:
+The application will support in-memory mode where data is cleared after the session ends.
+
+Technical Stack:
+Backend: Java and Spring Boot
+Database: H2 Database (in-memory DB)
+Build Tool: Maven
+Postman: To test and ensure that APIs are working as expected.
+
+This application is aimed at developers who need to simulate database interactions in a local environment, primarily for development and testing purposes.
