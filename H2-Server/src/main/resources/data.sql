@@ -1,0 +1,1 @@
+INSERT INTO DETAILS (name, age, city, email) VALUES ('nzpame', 'age', 'city', 'email@gmail.com');
