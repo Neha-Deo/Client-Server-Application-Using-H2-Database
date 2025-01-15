@@ -1,0 +1,50 @@
+Project Title: 
+  Client-Server Application Using H2 Database
+
+Objective:
+  Develop a client-server application where the Client performs CRUD operations and the Server manages data using an in-memory H2 database. 
+  This setup provides a clear separation of concerns, enabling robust testing and smooth local development.
+
+Components:
+  1. Server Application:
+    Purpose: Acts as the backend, hosting the H2 database in-memory and providing APIs for data access.
+    Features: 
+      a. H2 database integration in in-memory mode.
+      b. RESTful APIs for Create, Read, Update, and Delete operations.
+      c. Automatic schema and sample data initialization on startup.
+
+    Tech Stack:
+      a. Java (version 21)
+      b. Spring Boot (version 3.4.0) for REST API
+      b. H2 Database (in-memory mode)
+
+  2. Client Application:
+    Purpose: Frontend or API consumer that interacts with the server to perform CRUD operations.
+    Features:
+      a. Performs CRUD operations using REST API endpoints provided by the server.
+      b. Easy API testing using Postman.
+      c. Validation and error handling for seamless experience.
+
+    Tech Stack:
+      a. Postman: build, use, test, and document APIs.
+      b. Java (version 21)
+      c. Spring Boot (version 3.4.0) for REST API
+      d. H2 Database (in-memory mode)
+
+Workflow:
+  - The Server initializes the H2 database and exposes RESTful endpoints.
+  - The Client sends HTTP requests to the Server for CRUD operations.
+  - The Server processes requests, performs operations on the H2 database, and returns responses.
+
+Key Advantages:
+  1. Decoupling: Client and Server operate independently, making the system modular and easier to test.
+  2. Lightweight & Fast: In-memory H2 database ensures quick interactions during development and testing.
+  3. Scalable: This setup can be extended to use a persistent database for production.
+
+Use Cases:
+  1. Development and testing of REST APIs.
+  2. Prototyping database-driven applications.
+  3. Educational projects to understand client-server architectures.
+
+Outcome:
+  A fully functional client-server application that simulates real-world database operations using an in-memory H2 database, ensuring rapid local testing and development.
